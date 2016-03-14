@@ -1,6 +1,6 @@
 
-CFLAGS = -Werror -g -Wall -O0
-LDFLAGS = -L$(SDKSTAGE)/opt/vc/lib -lvcos -lbcm_host -lvchiq_arm -lpthread -ldl -lm -lrt
+CFLAGS = -g -Wall -O0
+LDFLAGS = -L$(SDKSTAGE)/usr/lib/gcc/arm-linux-gnueabihf/4.9 -L$(SDKSTAGE)/opt/vc/lib -lvcos -lbcm_host -lvchiq_arm -lpthread -ldl -lm -lrt
 INCLUDES = -I$(SDKSTAGE)/opt/vc/include -I$(SDKSTAGE)/opt/vc/include/interface/vcos/pthreads \
 		-I$(SDKSTAGE)/opt/vc/include/interface/vmcs_host/linux
 
