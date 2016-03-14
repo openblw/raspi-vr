@@ -1,1 +1,2 @@
-shell sleep 1
+set sysroot /mnt/raspi
+set prompt TEST>
